@@ -12,13 +12,7 @@
 <?php
 function end_page()
 {
-    echo '<hr/><br/><strong>Test</strong><br/><hr/>';
 
-    $jour = date('d/m/Y', strtotime(date('l F d, Y')));
-    echo $jour;
-
-    $jour = date('l F d, Y, h:i a');
-    echo '<br/>'.$jour;
 
     echo '</body>
         </html>';
@@ -27,5 +21,14 @@ function end_page()
 
 <?php
     start_page('titre');
+
+    echo '<hr/><br/><strong>Test</strong><br/><hr/>';
+
+    $jour = date('d/m/Y', strtotime(date('l F d, Y')));
+    echo $jour;
+
+    $jour = date('l F d, Y, h:i a');
+    echo '<br/>'.$jour;
+
     end_page();
 ?>
