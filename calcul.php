@@ -14,6 +14,11 @@ function end_page()
 {
     echo '<hr/><br/><strong>calcul</strong><br/><hr/>';
 
+    $op1 = $_POST['op1'];
+    $op2 = $_POST['op2'];
+    $op  = $_POST['op'];
+
+    echo "$op1 $op $op2 = ";
 
     echo '</body>
         </html>';
@@ -21,10 +26,8 @@ function end_page()
 ?>
 
 <?php
-$op1 = $_POST['op1'];
-$op2 = $_POST['op2'];
-$op  = $_POST['op'];
 
-start_page("$op1 $op $op2 = " );
+
+start_page('calcul');
 end_page();
 ?>
