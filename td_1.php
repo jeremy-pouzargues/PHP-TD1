@@ -16,7 +16,7 @@ function end_page()
     echo '<hr/><br/><strong>Test</strong><br/><hr/>';
     echo $jour;
     $jour = date('l F d, Y, h:i a');
-    echo "\n".$jour;
+    echo "<br/>".$jour;
 };
 ?>
 
