@@ -22,7 +22,7 @@ function end_page()
           <p><input type="radio" name="op" value="-"/>-<br/></p>
           <p><input type="radio" name="op" value="/"/>/<br/></p>
           <p><input type="submit" value="calcul"></p>
-          <p><input type="clear" value="effacer"></p>
+          <p><input type="reset" value="effacer"></p>
           </form>';
 
     echo '</body>
