@@ -42,7 +42,7 @@ function end_page()
     }
     elseif('-' == $op)
     {
-        echo "$op1" . " $op " . "$op2" . " = "
+        echo "$op1" . " $op " . "$op2" . " = ";
         echo $op1-$op2;
     }
     elseif('/' == $op)
