@@ -32,19 +32,23 @@ function end_page()
 
     if('*' == $op)
     {
-        echo "$op1" . " $op " . "$op2" . " = " . $op1*$op2;
+        echo "$op1" . " $op " . "$op2" . " = ";
+        echo $op1*$op2;
     }
     elseif('+' == $op)
     {
-        echo "$op1" . " $op " . "$op2" . " = " . $op1+$op2;
+        echo "$op1" . " $op " . "$op2" . " = ";
+        echo $op1+$op2;
     }
     elseif('-' == $op)
     {
-        echo "$op1" . " $op " . "$op2" . " = " . $op1-$op2;
+        echo "$op1" . " $op " . "$op2" . " = "
+        echo $op1-$op2;
     }
     elseif('/' == $op)
     {
-        echo "$op1" . " $op " . "$op2" . " = " . $op1/$op2;
+        echo "$op1" . " $op " . "$op2" . " = ";
+        echo $op1/$op2;
     }
     else
     {
