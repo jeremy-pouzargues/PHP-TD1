@@ -12,8 +12,9 @@
 <?php
 function end_page()
 {
+    $jour = date('l F d, Y');
     echo '<hr/><br/><strong>Test</strong><br/><hr/>';
-    echo date('l F d, Y');
+    echo $jour;
 };
 ?>
 
