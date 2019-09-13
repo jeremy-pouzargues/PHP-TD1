@@ -25,8 +25,8 @@ function end_page()
     echo '<hr/><br/><strong>Calculator</strong><br/><hr/>';
 
     echo '<form action="calcul.php" method="post">
-          <p> op1 <input type="text" name="nom" /></p>
-          <p> op2 <input type="text" name="age" /></p>
+          <p> op1 <input type="text" name="op1" /></p>
+          <p> op2 <input type="text" name="op2" /></p>
           <p><input checked ="checked" type="radio" name="op" value="*"/>*<br/></p>
           <p><input type="radio" name="op" value="+"/>+<br/></p>
           <p><input type="radio" name="op" value="-"/>-<br/></p>
