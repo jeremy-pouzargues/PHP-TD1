@@ -1,32 +1,22 @@
-<!DOCTYPE html>
+<?php
+    function start_page($title)
+    {
+        echo '<!DOCTYPE html>
+            <html lang="fr">
+                <head>
+                    <title>'. PHP_EOL . $title . '</title></head>
+                    <body>' . PHP_EOL;
+    };
+?>
 
-<html lang = 'fr'>
+<?php
+function end_page()
+{
+    echo '<hr/><br/><strong>Test</strong><br/><hr/>'
+};
+?>
 
-  <head>
-        <title> TD1 </title>
-  </head>
-
-  <body>
-
-    <?php
-        $var1 = 6;
-        $var2 = 1.3;
-        $var3 = 'Variable3';
-    ?>
-
-
-    ?>
-
-    <?php
-        echo $var1 + $var3;
-    ?>
-
-
-    <?php
-        echo '<strong> Voici mon premier programme PHP </strong><br/>' . "\n";
-        echo 'C\'est pas mal non ? <br/>';
-    ?>
-  </body>
-
-
-</html>
+<?php
+    start_page('titre');
+    end_page();
+?>
