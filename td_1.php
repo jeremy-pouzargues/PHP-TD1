@@ -12,7 +12,7 @@
 <?php
 function end_page()
 {
-    echo '<hr/><br/><strong>Test</strong><br/><hr/>'
+    echo '<hr/><br/><strong>Test</strong><br/><hr/>';
 };
 ?>
 
