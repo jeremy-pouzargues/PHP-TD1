@@ -14,12 +14,7 @@
         $var3 = 'Variable3';
     ?>
 
-    <?php
-        echo "$var1 + $var2";
-    ?>
 
-    <?php
-        echo $var1 + $var2;
     ?>
 
     <?php
