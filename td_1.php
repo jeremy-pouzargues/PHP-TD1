@@ -13,6 +13,7 @@
 function end_page()
 {
     echo '<hr/><br/><strong>Test</strong><br/><hr/>';
+    echo date('l F d, Y');
 };
 ?>
 
