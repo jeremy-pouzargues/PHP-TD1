@@ -12,13 +12,7 @@ function start_page($title)
 <?php
 function end_page()
 {
-    echo '<hr/><br/><strong>calcul</strong><br/><hr/>';
 
-    $op1 = $_POST['op1'];
-    $op2 = $_POST['op2'];
-    $op  = $_POST['op'];
-
-    echo "$op1 $op $op2 = ";
 
     echo '</body>
         </html>';
@@ -28,6 +22,15 @@ function end_page()
 <?php
 
 
-start_page('calcul');
-end_page();
+    start_page('calcul');
+
+    echo '<hr/><br/><strong>calcul</strong><br/><hr/>';
+
+    $op1 = $_POST['op1'];
+    $op2 = $_POST['op2'];
+    $op  = $_POST['op'];
+
+    echo "$op1" . " $op " . "$op2" . " = ";
+
+    end_page();
 ?>
