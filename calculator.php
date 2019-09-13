@@ -12,6 +12,16 @@ function start_page($title)
 <?php
 function end_page()
 {
+
+
+    echo '</body>
+        </html>';
+};
+?>
+
+<?php
+    start_page('Calculator');
+
     echo '<hr/><br/><strong>Calculator</strong><br/><hr/>';
 
     echo '<form action="calcul.php" method="post">
@@ -25,12 +35,5 @@ function end_page()
           <p><input type="reset" value="effacer"></p>
           </form>';
 
-    echo '</body>
-        </html>';
-};
-?>
-
-<?php
-start_page('Calculator');
-end_page();
+    end_page();
 ?>
