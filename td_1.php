@@ -12,7 +12,7 @@
 <?php
 function end_page()
 {
-    $jour = date('l F d, Y', strtotime('2020-04-01'));
+    $jour = date('d/m/Y', strtotime('2020-04-01'));
     echo '<hr/><br/><strong>Test</strong><br/><hr/>';
     echo $jour;
 };
