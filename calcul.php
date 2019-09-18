@@ -50,8 +50,8 @@ function end_page()
     }
     elseif('/' == $action)
     {
-        if ($op1 == 0)
-            echo 'Impossible de diviser zero';
+        if ($op2 == 0)
+            echo 'Impossible de diviser par zero';
         else
         {
             echo "$op1" . " $action " . "$op2" . " = ";
