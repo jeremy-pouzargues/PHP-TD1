@@ -31,6 +31,9 @@ function end_page()
     //$op  = $_POST['op'];
     $action = $_GET['action'];
 
+    if (is_null($op1) or is_null($op2))
+        return;
+
     if('*' == $action)
     {
         echo "$op1" . " $action " . "$op2" . " = ";
@@ -56,7 +59,6 @@ function end_page()
         echo '<br/><strong>opérateur ' . $action . ' non géré </strong>';
     }
 
-    //echo "$action";
 
 
     end_page();
