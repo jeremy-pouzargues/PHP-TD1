@@ -31,32 +31,30 @@ function end_page()
     //$op  = $_POST['op'];
     $action = $_POST['action'];
 
-    echo "$op1" . " $action " . "$op2" . " = " . $op1.$action.$op2;
-
-    /*if('*' == $op)
+    if('*' == $action)
     {
-        echo "$op1" . " $op " . "$op2" . " = ";
+        echo "$op1" . " $action " . "$op2" . " = ";
         echo $op1*$op2;
     }
-    elseif('+' == $op)
+    elseif('+' == $action)
     {
-        echo "$op1" . " $op " . "$op2" . " = ";
+        echo "$op1" . " $action " . "$op2" . " = ";
         echo $op1+$op2;
     }
-    elseif('-' == $op)
+    elseif('-' == $action)
     {
-        echo "$op1" . " $op " . "$op2" . " = ";
+        echo "$op1" . " $action " . "$op2" . " = ";
         echo $op1-$op2;
     }
-    elseif('/' == $op)
+    elseif('/' == $action)
     {
-        echo "$op1" . " $op " . "$op2" . " = ";
+        echo "$op1" . " $action " . "$op2" . " = ";
         echo $op1/$op2;
     }
     else
     {
-        echo '<br/><strong>opérateur ' . $op . ' non géré </strong>';
-    }*/
+        echo '<br/><strong>opérateur ' . $action . ' non géré </strong>';
+    }
 
     //echo "$action";
 
