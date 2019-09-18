@@ -27,18 +27,9 @@ function end_page()
     echo '<hr/><br/><strong>calcul</strong><br/><hr/>';
 
     $op1 = $_GET['op1'];
-    $op2 = $_GET['op2'];
-    //$op  = $_POST['op'];
+    $op2 = $_GET['op2'];];
     $action = $_GET['action'];
 
-    if (is_null($op1))
-    {
-        $op1 = 0;
-    }
-    elseif (is_null($op2))
-    {
-        $op2 = 0;
-    }
 
     if('*' == $action)
     {
