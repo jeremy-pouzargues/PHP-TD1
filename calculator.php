@@ -43,7 +43,7 @@ function end_page()
             echo 'type="radio" name="op" value="' . $operateurs[$cpt] . '"/>' . $operateurs[$cpt] . '<br/>' . "\n";
           }
           
-          echo '<p><input type="submit" value="calcul"></p>
+          echo '<p><input type="submit" name="action" value="calcul"></p>
           <p><input type="reset" value="effacer"></p>
           
           </form>';
