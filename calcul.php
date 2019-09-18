@@ -31,10 +31,7 @@ function end_page()
     //$op  = $_POST['op'];
     $action = $_POST['action'];
 
-    if ($action == ('*+-/'))
-        echo "$op1" . " $action " . "$op2" . " = " . $op1.$action.$op2;
-    else
-        echo '<br/><strong>opérateur ' . $action . ' non géré </strong>';
+    echo "$op1" . " $action " . "$op2" . " = " . $op1.$action.$op2;
 
     /*if('*' == $op)
     {

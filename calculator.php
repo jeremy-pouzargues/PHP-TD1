@@ -40,7 +40,7 @@ function end_page()
             {
                 echo 'checked="checked" ';
             }
-            echo 'type="submit" name="action" value="' . $operateurs[$cpt] . '"/>' . $operateurs[$cpt] . '<br/>' . "\n";
+            echo 'type="submit" name="action" value="' . $operateurs[$cpt] . '"/><br/>' . "\n";
           }
           
           //echo '<p><input type="submit" name="action" value="calcul"></p>
