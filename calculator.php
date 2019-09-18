@@ -29,9 +29,8 @@ function end_page()
 
           <p> op1 <input type="number" name="op1" /></p>
           
-          <p> op2 <input type="number" name="op2" /></p>
-          
-          <p><input checked ="checked" type="radio" name="op" value="*"/>*<br/></p>';
+          <p> op2 <input type="number" name="op2" /></p>';
+
           
           for($cpt = 0 ; $cpt <= 3 ; ++$cpt)
           {
