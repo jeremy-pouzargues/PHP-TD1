@@ -40,11 +40,11 @@ function end_page()
             {
                 echo 'checked="checked" ';
             }
-            echo 'type="radio" name="op" value="' . $operateurs[$cpt] . '"/>' . $operateurs[$cpt] . '<br/>' . "\n";
+            echo 'type="submit" name="action" value="' . $operateurs[$cpt] . '"/>' . $operateurs[$cpt] . '<br/>' . "\n";
           }
           
-          echo '<p><input type="submit" name="action" value="calcul"></p>
-          <p><input type="reset" value="effacer"></p>
+          //echo '<p><input type="submit" name="action" value="calcul"></p>
+          echo '<p><input type="reset" value="effacer"></p>
           
           </form>';
 

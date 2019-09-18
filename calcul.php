@@ -28,10 +28,15 @@ function end_page()
 
     $op1 = $_POST['op1'];
     $op2 = $_POST['op2'];
-    $op  = $_POST['op'];
+    //$op  = $_POST['op'];
     $action = $_POST['action'];
 
-    if('*' == $op)
+    if ($action == ('*+-/'))
+        echo "$op1" . " $action " . "$op2" . " = " . $op1.$action.$op2;
+    else
+        echo '<br/><strong>opérateur ' . $action . ' non géré </strong>';
+
+    /*if('*' == $op)
     {
         echo "$op1" . " $op " . "$op2" . " = ";
         echo $op1*$op2;
@@ -54,9 +59,9 @@ function end_page()
     else
     {
         echo '<br/><strong>opérateur ' . $op . ' non géré </strong>';
-    }
+    }*/
 
-    echo "$action";
+    //echo "$action";
 
 
     end_page();
