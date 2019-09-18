@@ -12,8 +12,6 @@ function start_page($title)
 <?php
 function end_page()
 {
-
-
     echo '</body>
         </html>';
 };
@@ -21,27 +19,23 @@ function end_page()
 
 <?php
     start_page('Calculator');
-
-    echo '<hr/><br/><strong>Calculator de la mort qui tue</strong><br/><hr/>';
-
+    echo '<hr/><br/><strong>Calculator</strong><br/><hr/>';
     $operateurs = '*+-/';
-
     echo '<form action="calcul.php" method="post">
           <p> op1 <input type="number" name="op1" /></p>
           <p> op2 <input type="number" name="op2" /></p>
-          <p><input checked ="checked" type="radio" name="op" value="*"/>*<br/></p>';
+          <p><input checked ="checked" type="radio" name="op" value="*"/>*<br/></p>
           for($cpt = 0 ; $cpt <= 3 ; ++$cpt)
           {
-            echo '<input';
+            echo '<input '; 
             if($cpt == 0)
             {
-                echo 'checked="checked"' ;
+                echo 'checked="checked" ';
             }
             echo 'type="radio" name="op" value="' . $operateurs[$cpt] . '"/>' . $operateurs[$cpt] . '<br/>' . "\n";
           }
-          echo '<p><input type="submit" value="calcul"></p>
+          <p><input type="submit" value="calcul"></p>
           <p><input type="reset" value="effacer"></p>
           </form>';
-
     end_page();
 ?>
