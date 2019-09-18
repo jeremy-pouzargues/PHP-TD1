@@ -22,7 +22,7 @@ function end_page()
 <?php
     start_page('Calculator');
 
-    echo '<hr/><br/><strong>Calculator de la mort</strong><br/><hr/>';
+    echo '<hr/><br/><strong>Calculator de la mort qui tue</strong><br/><hr/>';
 
     $operateurs = '*+-/';
 
