@@ -31,8 +31,14 @@ function end_page()
     //$op  = $_POST['op'];
     $action = $_GET['action'];
 
-    if (is_null($op1) or is_null($op2))
-        return;
+    if (is_null($op1))
+    {
+        $op1 = 0;
+    }
+    elseif (is_null($op2))
+    {
+        $op2 = 0;
+    }
 
     if('*' == $action)
     {
