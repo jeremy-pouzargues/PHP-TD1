@@ -29,7 +29,7 @@ function end_page()
     echo '<form action="calcul.php" method="post">
           <p> op1 <input type="number" name="op1" /></p>
           <p> op2 <input type="number" name="op2" /></p>
-          <p><input checked ="checked" type="radio" name="op" value="*"/>*<br/></p>'
+          <p><input checked ="checked" type="radio" name="op" value="*"/>*<br/></p>';
           for($cpt = 0 ; $cpt <= 3 ; ++$cpt)
           {
             echo '<input';
