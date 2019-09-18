@@ -39,7 +39,7 @@ function end_page()
             }
             echo 'type="radio" name="op" value="' . $operateurs[$cpt] . '"/>' . $operateurs[$cpt] . '<br/>' . "\n";
           }
-          <p><input type="submit" value="calcul"></p>
+          echo '<p><input type="submit" value="calcul"></p>
           <p><input type="reset" value="effacer"></p>
           </form>';
 
