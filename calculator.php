@@ -27,9 +27,9 @@ function end_page()
 
     echo '<form action="calcul.php" method="get">
 
-          <p> op1 <input type="number" name="op1" /></p>
+          <p> op1 <input type="number" name="op1" required="required" /></p>
           
-          <p> op2 <input type="number" name="op2" /></p>';
+          <p> op2 <input type="number" name="op2" required="required" /></p>';
 
           
           for($cpt = 0 ; $cpt <= 3 ; ++$cpt)

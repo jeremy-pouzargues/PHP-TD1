@@ -26,15 +26,10 @@ function end_page()
 
     echo '<hr/><br/><strong>calcul</strong><br/><hr/>';
 
-    if (!is_null($_GET['op1']))
-        $op1 = $_GET['op1'];
-    else
-        $op1 = 0;
+    $op1 = $_GET['op1'];
 
-    if (!is_null($_GET['op2']))
-        $op2 = $_GET['op2'];
-    else
-        $op2 = 0;
+    $op2 = $_GET['op2'];
+
     $action = $_GET['action'];
 
 
@@ -55,8 +50,13 @@ function end_page()
     }
     elseif('/' == $action)
     {
-        echo "$op1" . " $action " . "$op2" . " = ";
-        echo $op1/$op2;
+        if ($op1 == 0)
+            echo 'Impossible de diviser zero';
+        else
+        {
+            echo "$op1" . " $action " . "$op2" . " = ";
+            echo $op1 / $op2;
+        }
     }
     else
     {
