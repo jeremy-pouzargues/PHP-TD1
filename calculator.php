@@ -25,7 +25,7 @@ function end_page()
 
     $operateurs = '*+-/';
 
-    echo '<form action="calcul.php" method="post">
+    echo '<form action="calcul.php" method="get">
 
           <p> op1 <input type="number" name="op1" /></p>
           
